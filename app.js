@@ -1,16 +1,22 @@
-function add(n1, n2, showResult, resultPharas) {
-    // if(typeof n1 !== 'number' || typeof n2 !== 'number' ) {
-    //     throw new Error("Incorrect input!")
-    // }
-    var result = n1 + n2;
-    if (showResult) {
-        console.log(resultPhrase + result);
-    }
-    return n1 + n2;
+var person = {
+    name: "jr",
+    age: 34,
+    hobbies: ["sports", 6, true]
+};
+var miso = {
+    name: "miso",
+    age: 9,
+    favFoods: {
+        dry: "purina",
+        wet: "fancy feast"
+    },
+    toys: ["yarn", "ball", "hoodie"]
+};
+var randomArray;
+randomArray = ["that", "any"];
+for (var _i = 0, _a = miso.toys; _i < _a.length; _i++) {
+    var toy = _a[_i];
+    console.log(toy.toUpperCase() + " :mine");
 }
-var number1 = 5;
-var number2 = 2.8;
-var printResult = true;
-var resultPhrase = "Result is: ";
-var answer = add(number1, number2, printResult, resultPhrase);
-// console.log(answer, " :this is the answer");
+// console.log(person.name)
+// console.log(miso.toys.forEach(toy => console.log(toy)));
