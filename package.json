@@ -1,0 +1,23 @@
+{
+  "name": "type-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jr1412594/ts-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jr1412594/ts-intro/issues"
+  },
+  "homepage": "https://github.com/jr1412594/ts-intro#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
