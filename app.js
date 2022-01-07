@@ -1,22 +1,16 @@
-var person = {
-    name: "jr",
-    age: 34,
-    hobbies: ["sports", 6, true]
-};
-var miso = {
-    name: "miso",
-    age: 9,
-    favFoods: {
-        dry: "purina",
-        wet: "fancy feast"
-    },
-    toys: ["yarn", "ball", "hoodie"]
-};
-var randomArray;
-randomArray = ["that", "any"];
-for (var _i = 0, _a = miso.toys; _i < _a.length; _i++) {
-    var toy = _a[_i];
-    console.log(toy.toUpperCase() + " :mine");
+function combine(input1, input2, resultConversion) {
+    var result;
+    if (typeof input1 === "number" && typeof input2 === "number" || resultConversion === 'as-number') {
+        result = +input1 + +input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 }
-// console.log(person.name)
-// console.log(miso.toys.forEach(toy => console.log(toy)));
+var numbers = combine(5, 9, 'as-number');
+console.log(numbers);
+var combinedStringAges = combine('5', '9', 'as-number');
+console.log(combinedStringAges);
+var words = combine("this ", "that", 'as-text');
+console.log(words);
