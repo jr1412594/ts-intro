@@ -1,22 +1,10 @@
-function combine(
-    input1: number | string,
-    input2: number | string,
-    resultConversion: 'as-number' | 'as-text'  //literal type, will only be this.
-) {
-    let result;
-    if (typeof input1 === "number" && typeof input2 === "number" || resultConversion === 'as-number') {
-        result = +input1 + +input2;
-    } else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
+const add = (n1: number, n2: number) => {
+    return n1 + n2;
+};
+
+function printResult(num: number) {
+    console.log("result " + num);
 }
 
-const numbers = combine(5, 9, 'as-number');
-console.log(numbers);
 
-const combinedStringAges = combine('5', '9', 'as-number');
-console.log(combinedStringAges)
-
-const words = combine("this ", "that", 'as-text');
-console.log(words);
+printResult(add(5,2));
